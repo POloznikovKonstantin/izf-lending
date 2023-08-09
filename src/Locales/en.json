@@ -1,3 +1,7 @@
 {
-    "Welocome React": "Welocme React"
+    "Header": {
+        "ButtonHome": "Home",
+        "ButtonProjects": "Projets",
+        "ButtonExperience": "Experience"
+    }
 }

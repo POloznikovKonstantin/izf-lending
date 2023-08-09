@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover  {
+    text-decoration: none;
+    color: #fff;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+    color: #fff;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+    color: #fff;
+}
+
+legend {
+	display: block;
+}
+
+:root{
+    --background-black: #1E1E1E;
+    --main-pink: #F29C9B;
+    --main-pink-transparent: rgba(242, 156, 155, 0.25);
+    --main-gray: #8F8F8F;
+}
+
+body{
+    background-color: var(--background-black);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+.header-text{
+    font-weight: 700;
+    font-size: calc(48 / 1920 * 100vw);
+}
+
+.subtitle-text{
+    font-weight: 700;
+    font-size: calc(32 / 1920 * 100vw);
+}
+
+.paragraph-text{
+    font-size: calc(16 / 1920 * 100vw);
+}
+
+
+@media (max-width: 820px) {
+    .container{
+        max-width: 100%;
+    }
+
+    .header-text{
+        font-size: calc(48 / 640 * 100vw);
+    }
+
+    .subtitle-text{
+        font-size: calc(32 / 640 * 100vw);
+    }
+
+    .paragraph-text{
+        font-size: calc(16 / 640 * 100vw);
+    }
+}
+
+@media (max-width: 420px) {
+    .header-text{
+        font-size: calc(48 / 390 * 100vw);
+    }
+
+    .subtitle-text{
+        font-size: calc(32 / 390 * 100vw);
+    }
+
+    .paragraph-text{
+        font-size: calc(16 / 390 * 100vw);
+    }
+}

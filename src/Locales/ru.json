@@ -1,3 +1,7 @@
 {
-    "Welocome React": "Добро пожаловать!"
+    "Header": {
+        "ButtonHome": "Главная",
+        "ButtonProjects": "Проекты",
+        "ButtonExperience": "Опыт работы"
+    }
 }
