@@ -1,0 +1,25 @@
+.background-card {
+    width: 390px;
+    height: 490px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #9E9E9E;
+    background: #262626;
+}
+.border-stack {
+    width: 386px;
+    height: 61px;
+    flex-shrink: 0;
+    border-top: 2px solid #9E9E9E;
+    border-bottom: 2px solid #9E9E9E;
+    background: #262626;
+}
+
+.button-link {
+    width: 355px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #F29C9B;
+    background: rgba(242, 156, 155, 0.25);
+}
