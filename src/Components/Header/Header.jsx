@@ -1,7 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-// import { useLocalStorage } from '../hooks';
-import headerStyle from './Header.module.css';
+
+import './Header.css';
+import { logoGGP } from '../../assets';
 
 export const Header = () => {
     const {t, i18n} = useTranslation();
@@ -9,28 +10,28 @@ export const Header = () => {
 
 
     return (
-        <header className={headerStyle.header_main}>
+        <div className='header-main'>
             <div>
-
+                <img src={logoGGP} alt='logo'/>
             </div>
 
-            <div>
-                <a className='paragraph-text' href='/#'>
+            <nav>
+                <a className='paragraph-text item-link' href='/#'>
                     {t("Header.ButtonHome")}
                 </a>
 
-                <a className='paragraph-text' href='/#'>
+                <a className='paragraph-text item-link' href='/#'>
                     {t("Header.ButtonProjects")}
                 </a>
 
-                <a className='paragraph-text' href='/#'>
+                <a className='paragraph-text item-link' href='/#'>
                     {t("Header.ButtonExperience")}    
                 </a>
-            </div>
+            </nav>
 
             <div>
-
+                <p>EN</p>
             </div>
-        </header>
+        </div>
     )
 }

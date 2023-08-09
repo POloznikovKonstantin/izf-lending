@@ -125,6 +125,7 @@ body{
 @media (max-width: 820px) {
     .container{
         max-width: 100%;
+        padding-inline: calc(20 / 640 * 100vw);
     }
 
     .header-text{

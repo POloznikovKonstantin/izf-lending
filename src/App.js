@@ -9,6 +9,36 @@ export const App = () => {
   return (
     <main className='container'>
         <Header/>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
+        <p className='header-text'>adwawdawdawd</p>
     </main>
   )
 }
