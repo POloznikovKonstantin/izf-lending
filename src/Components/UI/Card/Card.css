@@ -1,22 +1,40 @@
 .background-card {
-    margin-top: 10%;
-    width: calc(390/1040 * 100vw);
-    height: calc(490/1040 * 100vm);
+    flex-direction: column;
+    justify-content: space-between;
+    margin:10%;
+    width: calc(390/1920 * 100vw);
+    height: calc(490/1920 * 100vm);
     border-radius: 20px;
     border: 2px solid #9E9E9E;
     background: #262626;
 }
+
+.description-card{
+    padding: calc((10/1920) * 100vm);
+}
+
+.image-project {
+    width: calc(390/1920*100vm);
+    height: calc(150/1920 *100vm);
+}
+
+.footer-card {
+    display: flex;
+    align-items: center;
+}
+
 .border-stack {
-    width: calc(386/1040*100vm);
-    height: calc(61/1040*100vm);
+    width: calc(386/1920*100vm);
+    height: calc(61/1920*100vm);
     border-top: 2px solid #9E9E9E;
     border-bottom: 2px solid #9E9E9E;
     background: #262626;
 }
 
 .button-link {
-    width: calc(355/1040*100vm);
-    height: calc(37/1040*100vm);
+    margin-inline: auto;
+    width: calc(355/1920*100vm);
+    height: calc(37/1920*100vm);
     border-radius: 8px;
     border: 1px solid #F29C9B;
     background: rgba(242, 156, 155, 0.25);

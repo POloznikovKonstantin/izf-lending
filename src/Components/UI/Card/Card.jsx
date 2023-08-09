@@ -1,16 +1,24 @@
 import React from "react";
 import './Card.css';
+import { useTransform } from "framer-motion";
 
 export const Card = ({nameHeader, description, placeHolder, imgLink, link, stack}) => {
+
     return(
         <div className='background-card'>
-            <img src={imgLink} alt=''/>
-            <div className='border-stack'>
-                <p>{stack}</p>
+            <div className='image-project'>
+                <img src={imgLink} alt='Какая картинка'/>
             </div>
-            <h4>{nameHeader}</h4>
-            <p>{description}</p>
-            <a className='button-link' href={link}>Open to GitHUB</a>
+            <div className='border-stack'>
+                <p>{stack} Стак разработки </p>
+            </div>
+            <h1>{nameHeader} Название проекта </h1>
+            <div className='description-card'>
+                <p>{description} Краткое описание проекта о какой то штуке</p>
+            </div>
+            <div className="footer-card">
+                <a className='button-link' href={link}>Open to GitHUB</a>
+            </div>
         </div>
     )
 }
