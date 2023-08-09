@@ -1,44 +1,21 @@
 import React from 'react';
-// import { useTranslation } from 'react-i18next';
+import {useLocalStorage} from './hooks';
 import { Header } from './Components/Header/Header';
+import { useTranslation } from 'react-i18next';
 
 export const App = () => {
-  // const {t} = useTranslation();
+  const {i18n} = useTranslation();
+  const [language, setLanguage] = useLocalStorage('language', 'en');
+
+  const changeLanguage = (newLng) => {
+    setLanguage(newLng);
+    i18n.changeLanguage(newLng);
+  }
 
 
   return (
     <main className='container'>
-        <Header/>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
-        <p className='header-text'>adwawdawdawd</p>
+        <Header lng={language} changeLng={changeLanguage}/>
     </main>
   )
 }
