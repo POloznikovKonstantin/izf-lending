@@ -3,6 +3,7 @@ import {useLocalStorage} from './hooks';
 import { Header } from './Components/Header/Header';
 import { useTranslation } from 'react-i18next';
 import { Card } from './Components/UI/Card/Card.jsx';
+import { ChangeLng } from './Components/UI/Buttons/ChangeLng/ChangeLng';
 
 export const App = () => {
   const {i18n} = useTranslation();
