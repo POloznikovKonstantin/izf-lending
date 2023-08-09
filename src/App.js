@@ -2,6 +2,7 @@ import React from 'react';
 import {useLocalStorage} from './hooks';
 import { Header } from './Components/Header/Header';
 import { useTranslation } from 'react-i18next';
+import { MainSection } from './Components/MainSection/MainSection';
 
 export const App = () => {
   const {i18n} = useTranslation();
@@ -16,6 +17,8 @@ export const App = () => {
   return (
     <main className='container'>
         <Header lng={language} changeLng={changeLanguage}/>
+        <MainSection/>
+        
     </main>
   )
 }
