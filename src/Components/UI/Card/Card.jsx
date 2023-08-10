@@ -10,11 +10,11 @@ export const Card = ({nameHeader, description, placeHolder, imgLink, link, stack
                 <img src={imgLink} alt='Какая картинка'/>
             </div>
             <div className='border-stack'>
-                <p>{stack} Стак разработки </p>
+                <p className="paragraph-text">{`Stack ${stack}`}</p>
             </div>
-            <h1>{nameHeader} Название проекта </h1>
+            <h4 className="subtitle-text">{nameHeader} Название проекта </h4>
             <div className='description-card'>
-                <p>{description} Краткое описание проекта о какой-то штуке</p>
+                <p className="paragraph-text">{description} Краткое описvgdbhvs bvjdhsvjssdvsdvs dvsdvsdvdsvsdvv svsddvsdvsdv svdsvsvsdvsd vsvdsvdgsd hvbsjdv bvjbds hvsavhjsvdание проекта о какой-то штуке</p>
             </div>
             <div className="footer-card">
                 <a className='button-link' href={link}>{placeHolder}Open to GitHUB</a>
