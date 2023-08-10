@@ -3,10 +3,11 @@
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 100;
 
     padding-top: calc(30 / 1920 * 100vw);
     padding-bottom: calc(30 / 1920 * 100vw);
-    padding-inline: calc(160 / 1920 * 100vw);
+    padding-inline: calc(240 / 1920 * 100vw);
 
     background-color: rgb(38, 38, 38, 0.75);
     backdrop-filter: blur(5.5px);
@@ -145,7 +146,7 @@
     .header-main{
         padding-top: calc(15 / 420 * 100vw);
         padding-bottom: calc(15 / 420 * 100vw);
-        padding-inline: calc(10 / 420 * 100vw);
+        padding-inline: calc(20 / 420 * 100vw);
     }
 
     .header-nav__mobile-item{

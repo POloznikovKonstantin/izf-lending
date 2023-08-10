@@ -14,10 +14,10 @@ export const Card = ({nameHeader, description, placeHolder, imgLink, link, stack
             </div>
             <h1>{nameHeader} Название проекта </h1>
             <div className='description-card'>
-                <p>{description} Краткое описание проекта о какой то штуке</p>
+                <p>{description} Краткое описание проекта о какой-то штуке</p>
             </div>
             <div className="footer-card">
-                <a className='button-link' href={link}>Open to GitHUB</a>
+                <a className='button-link' href={link}>{placeHolder}Open to GitHUB</a>
             </div>
         </div>
     )

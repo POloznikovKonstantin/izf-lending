@@ -1,21 +1,35 @@
 .background-card {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: stretch;
     margin:10%;
     width: calc(390/1920 * 100vw);
-    height: calc(490/1920 * 100vm);
+    height: calc(490/1920 * 100vw);
     border-radius: 20px;
     border: 2px solid #9E9E9E;
     background: #262626;
 }
 
+a p{
+    font-size: calc(20/1920 * 100vw);
+}
+
 .description-card{
-    padding: calc((10/1920) * 100vm);
+    padding:calc(18/1920*100vw);
 }
 
 .image-project {
-    width: calc(390/1920*100vm);
-    height: calc(150/1920 *100vm);
+    width: calc(386/1920*100vw);
+    height: calc(207/1920 *100vw);
+}
+
+.border-stack {
+    padding-left: calc(10/1920*100vw);
+    padding-right: calc(5/1920*100vw);
+    width: calc(382/1920*100vw);
+    height: calc(61/1920*100vw);
+    border-top: 2px solid #9E9E9E;
+    border-bottom: 2px solid #9E9E9E;
+    background: #262626;
 }
 
 .footer-card {
@@ -23,19 +37,13 @@
     align-items: center;
 }
 
-.border-stack {
-    width: calc(386/1920*100vm);
-    height: calc(61/1920*100vm);
-    border-top: 2px solid #9E9E9E;
-    border-bottom: 2px solid #9E9E9E;
-    background: #262626;
-}
-
 .button-link {
-    margin-inline: auto;
-    width: calc(355/1920*100vm);
-    height: calc(37/1920*100vm);
+    bottom: calc(18/1920*100vws);
+    margin-inline: calc(18/1920*100vw);
+    width: calc(355/1920*100vw);
+    height: calc(37/1920*100vw);
     border-radius: 8px;
     border: 1px solid #F29C9B;
     background: rgba(242, 156, 155, 0.25);
+    text-align: center;
 }
